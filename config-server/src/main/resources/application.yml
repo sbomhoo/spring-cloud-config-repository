@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sbomhoo/spring-cloud-config-repository   #설정파일을 저장해놓은 외부 url
+

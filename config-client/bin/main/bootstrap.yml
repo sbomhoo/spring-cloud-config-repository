@@ -1,0 +1,12 @@
+server:
+  port: 8081  #Config-client서버포트 번호 설정, Config Server 가 8080 포트를 사용중이므로 충돌을 피하기 위함
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: demo    #읽어올 설정파일 등록  ${ApplicationName}-${EnvironmentName}.yml 
+  cloud:
+    config:
+      uri: http://localhost:8080
+
